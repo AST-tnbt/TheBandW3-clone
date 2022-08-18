@@ -1,0 +1,401 @@
+:root {
+    --text-color : #333;
+    --white-color : #fff;
+    --black-color : #000;
+}
+
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+#header {
+    display: flex;
+    position: fixed;
+    height: 46px;
+    width: 100%;
+    background-color: var(--black-color);
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 80px;
+    height: 100%;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+.home-btn, .btn-more, .down-icon{
+    text-decoration: none;
+    margin: auto;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.btn-home-more:hover .sub_nav {
+    display: block;
+}
+
+.down-icon {
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+.sub_nav {
+    position: absolute;
+    list-style: none;
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 10px 1px #888888;
+    display: none;
+}
+
+.sub__nav-item {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 10px 60px 5px 10px;
+    cursor: pointer;
+}
+
+.sub__nav-item:hover {
+    background-color: #999;
+}
+
+.header__search {
+    display: flex;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+}
+
+.header__search:hover {
+    background-color: rgba(218, 13, 13, 0.775);
+}
+
+.search-icon {
+    margin: auto;
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+/* home */
+.HomePage__img {
+    width: 100%;
+}
+
+/* container */
+
+.grid {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.band__information {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.band__name {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 80px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.band__slogan {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    color: #888888;
+}
+
+.band__info {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+
+.member-info {
+    width: 100%;
+}
+
+.band__members {
+    display: flex;
+    margin-top: 80px;
+}
+
+.member-name {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.member-img {
+    display: block;
+    width: 200px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* tour */
+
+.band__tour {
+    background-color: var(--black-color);
+    padding-top: 20px;
+}
+
+.tour-page-title {
+    color: var(--white-color);
+    text-align: center;
+    padding-top: 80px;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.tour-page-note {
+    text-align: center;
+    color: #666;
+    font-size: 1.6rem;
+    margin-top: 40px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.box__booking-month {
+    width: 100%;
+    background-color: var(--white-color);
+    margin-top: 60px;
+    position: relative;
+}
+
+.booking-month-item {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    height: 36px;
+    align-items: center;
+}
+
+.booking-month {
+    color: #999;
+    font-size: 1.6rem;
+    margin: 0 10px;
+}
+
+.sold-out-sticker {
+    background-color: #f44336;
+    color: var(--white-color);
+    margin-left: 5px;
+    padding: 4px 4px;
+    font-size: 1.6rem;
+    border-radius: 2px;
+}
+
+.number-notify {
+    font-size: 1.6rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 2px 8px;
+    position: absolute;
+    right: 20px;
+}
+
+.buy-ticket-box {
+    margin-top: 36px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-ticket-item {
+    background-color: var(--white-color);
+    width: 245px;
+}
+
+.location-tour-img {
+    width: 245px;
+}
+
+.location-tour-img:hover {
+    opacity: .8;
+}
+
+.title-ticket {
+    color: var(--text-color);
+    margin: 14px 10px;
+    font-size: 1.6rem;
+}
+
+.ticket-time {
+    color: #999;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 14px 10px;
+}
+
+.ticket-info {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin: 14px 10px;
+}
+
+.btn-classic {
+    margin: 14px 10px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    outline: none;
+    padding: 10px 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-classic:hover {
+    background-color: #666;
+}
+
+/* contact */
+
+.band__contact {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.contact-title {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.contact-note {
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    margin-top: 36px;
+    list-style: none;
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+.contact-icon {
+    margin-right: 10px ;
+}
+
+.contact-icon-location {
+    margin-right: 13px;
+}
+
+.contact-input-item__package {
+    margin-top: 36px ;
+    display: flex;
+}
+
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+}
+
+.contact-input-item {
+    display: block;
+    padding: 10px;
+    height: 36px;
+    border: 1px solid #ccc;
+}
+
+.contact-input-item__name {
+    margin-right: 10px;
+    flex: 1;
+}
+
+.contact-input-item__email {
+    flex: 1;
+}
+
+
+.contact-input-item__message {
+    align-items: stretch;
+    margin-top: 10px;
+}
+
+.btn-send {
+    align-self: flex-end;
+}
+
+.contact-input
+.btn-send {
+    margin: 10px 0 0 0;
+}
+
+.map-img {
+    width: 100%;
+    filter: grayscale(.5)
+}
+
+/* footer */
+
+#footer {
+    padding: 80px 0;
+}
+
+.footer-contact-item {
+    text-align: center;
+}
+
+.footer-contact-icon {
+    margin: 0 5px;
+    font-size: 2.6rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.footer-contact-icon:hover {
+    opacity: .8;
+}
+
+.footer-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #999;
+}
